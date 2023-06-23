@@ -10,7 +10,7 @@ login.addEventListener("submit",(event)=>{
 
 async function userLoginFn(obj){
     try {
-        let res=await fetch(`http://localhost:3100/login`,{
+        let res=await fetch(`https://health-care-system-backend.onrender.com/login`,{
             method:"POST",
             headers:{
                 "Content-Type":"Application/json"

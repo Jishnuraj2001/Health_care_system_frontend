@@ -7,7 +7,7 @@ getAppointmentsFn();
 
 async function getAppointmentsFn(){
     try {
-        let res = await fetch("http://localhost:3100/appointments", {
+        let res = await fetch("https://health-care-system-backend.onrender.com/appointments", {
             method: "GET",
             headers: {
                 "Content-Type": "Application/json",
@@ -63,7 +63,7 @@ function renderAppointmentsFn(arr,role){
 
 async function deleteAppointmentFn(delete_id){
     try {
-        let res = await fetch(`http://localhost:3100/appointment/${delete_id}`, {
+        let res = await fetch(`https://health-care-system-backend.onrender.com/appointment/${delete_id}`, {
             method: "DELETE",
             headers: {
                 "Content-Type": "Application/json",

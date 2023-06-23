@@ -19,7 +19,7 @@ fetchDoctorsFn();
 
 async function fetchDoctorsFn() {
     try {
-        let res = await fetch("http://localhost:3100/doctors", {
+        let res = await fetch("https://health-care-system-backend.onrender.com/doctors", {
             method: "GET",
             headers: {
                 "Content-Type": "Application/json",
@@ -118,7 +118,7 @@ function renderDoctorsFn(arr) {
 
 async function bookAppointmentFn(obj){
     try {
-        let res = await fetch("http://localhost:3100/appointment", {
+        let res = await fetch("https://health-care-system-backend.onrender.com/appointment", {
             method: "POST",
             headers: {
                 "Content-Type": "Application/json",

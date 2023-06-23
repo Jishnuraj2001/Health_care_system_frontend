@@ -17,7 +17,7 @@ register.addEventListener("submit",(event)=>{
 
 async function userRegisterFn(obj){
     try {
-        let res=await fetch(`http://localhost:3100/register`,{
+        let res=await fetch(`https://health-care-system-backend.onrender.com/register`,{
             method:"POST",
             headers:{
                 "Content-Type":"Application/json"
