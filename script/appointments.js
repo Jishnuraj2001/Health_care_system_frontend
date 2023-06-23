@@ -42,7 +42,7 @@ function renderAppointmentsFn(arr,role){
         <div class="time_slot"><label for="">Time Slot :</label>${el.time_slot}</div>
         <div class="patient_email"><label for="">Patient Email :</label>${el.patient_id.email}</div>
         <div class="btns_div">
-            <button type="click" class="video_btn" data-id=${el._id}>Start Video Consultation</button>
+            <button type="click" class="video_btn" data-id=${el._id}>Video Consultation</button>
             <button type="click" class="delete_btn" data-id=${el._id}>Cancel Appointment</button>
         </div>
     </div>`;
